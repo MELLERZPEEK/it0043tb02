@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Data Entry</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="national_dex">National Dex:</label>
+        <input type="number" id="national_dex" name="national_dex" min="0"><br><br>
+        
+        <label for="pokemon_name">Pokemon Name:</label>
+        <input type="text" id="pokemon_name" name="pokemon_name"><br><br>
+        
+        <label>Generation:</label><br>
+        <input type="radio" id="gen_i" name="generation" value="I">
+        <label for="gen_i">I</label><br>
+        <input type="radio" id="gen_ii" name="generation" value="II">
+        <label for="gen_ii">II</label><br>
+        <input type="radio" id="gen_iii" name="generation" value="III">
+        <label for="gen_iii">III</label><br><br>
+        
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image"><br><br>
+        
+        <label for="type1">Type 1:</label>
+        <select id="type1" name="type1">
+            <option value="Grass">Grass</option>
+            <option value="Fire">Fire</option>
+            <option value="Water">Water</option>
+            <option value="Electric">Electric</option>
+            <option value="Ground">Ground</option>
+        </select><br><br>
+        
+        <label for="type2">Type 2:</label>
+        <select id="type2" name="type2">
+            <option value="Normal">Normal</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Flying">Flying</option>
+            <option value="Poison">Poison</option>
+            <option value="Rock">Rock</option>
+        </select><br><br>
+        
+        <label for="evolves_from">Evolves From:</label>
+        <input type="text" id="evolves_from" name="evolves_from"><br><br>
+        
+        <label for="evolves_to">Evolves To:</label>
+        <input type="text" id="evolves_to" name="evolves_to"><br><br>
+        
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname"><br><br>
+        
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>National Dex</th>
+            <th>Pokemon Name</th>
+            <th>Generation</th>
+            <th>Image</th>
+            <th>Type 1</th>
+            <th>Type 2</th>
+            <th>Evolves From</th>
+            <th>Evolves To</th>
+            <th>Nickname</th>
+            <th>Birthday</th>
+        </tr>
+        <tr>
+            <td>619</td>
+            <td>Mely</td>
+            <td>I</td>
+            <td><img src="FB PICTURE.jpg" width = "100"></td>
+            <td bgcolor="#7AC74C" style="color: white;">Grass</td>
+            <td bgcolor="4db560" style="color: white;">Poison</td>
+            <td>-</td>
+            <td>Mellerz</td>
+            <td>Melz</td>
+            <td>2003-01-29</td>
+        </tr>
+        <tr>
+            <td>255</td>
+            <td>Torchic</td>
+            <td>I</td>
+            <td><img src="TORCHIC.png" width = "100"></td>
+            <td bgcolor="#A8A77A" style="color: white;">Fire</td>
+            <td>-</td>
+            <td></td>
+            <td>Charlie</td>
+            <td>2002-12-28</td>
+        </tr>
+        <tr>
+            <td>054</td>
+            <td>Psyduck</td>
+            <td>I</td>
+            <td><img src="psyduck.jpg"  width = "100"></td>
+            <td bgcolor="#6390F0" style="color: white;">Water</td>
+            <td>-</td>
+            <td>Golduck</td>
+            <td>Goldust</td>
+            <td>2020-02-18</td>
+        </tr>
+        <tr>
+            <td>025</td>
+            <td>Pikachu</td>
+            <td>I</td>
+            <td><img src="pika.jpg" width = "100"></td>
+            <td bgcolor="#F7D02C" style="color: white;">Electric</td>
+            <td>Pichu</td>
+            <td>Raichu</td>
+            <td>Sparky</td>
+            <td>2009-01-08</td>
+        </tr>
+        <tr>
+            <td>112</td>
+            <td>Rhydon</td>
+            <td>I</td>
+            <td><img src="rhydon.jpg" width = "100"></td>
+            <td bgcolor="#B6A136" style="color: white;">Ground</td>
+            <td bgcolor="4e342e" style="color: white;">Rock</td>
+            <td>Rhyhorn</td>
+            <td>Rhyperior</td>
+            <td>Rocky</td>
+            <td>2010-05-28</td>
+        </tr>
+        <tr>
+            <td>151</td>
+            <td>Empatheon</td>
+            <td>I</td>
+            <td><img src="empatheon.jpg" width = "100"></td>
+            <td bgcolor="#F95587" style="color: white;">Psychic</td>
+            <td bgcolor="#E75480" style="color: white;">fairy</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Psyche</td>
+            <td>2008-06-09</td>
+        </tr>
+        <tr>
+            <td>152</td>
+            <td>Chikorita</td>
+            <td>II</td>
+            <td><img src="chikitoria.jpg" width = "100"></td>
+            <td bgcolor="#78C850" style="color: white;">Grass</td>
+            <td>-</td>
+            <td>Bayleef</td>
+            <td>Chiko</td>
+            <td>2005-04-26</td>
+        </tr>
+        <tr>
+            <td>155</td>
+            <td>Cyndaquil</td>
+            <td>II</td>
+            <td><img src="cyndaquil.jpg" width = "100"></td>
+            <td bgcolor="#F08030" style="color: white;">Fire</td>
+            <td>-</td>
+            <td>Quilava</td>
+            <td>Cyndi</td>
+            <td>2002-07-07</td>
+        </tr>
+        <tr>
+            <td>158</td>
+            <td>Kingdra</td>
+            <td>II</td>
+            <td><img src="kingdra.jpg" width = "100"></td>
+            <td bgcolor="#6890F0" style="color: white;">Water</td>
+            <td bgcolor="#090604" style="color: white;">Dragon</td>
+            <td>-</td>
+            <td>Seadra</td>
+            <td>Seahorse</td>
+            <td>2001-02-06</td>
+        </tr>
+        <tr>
+            <td>165</td>
+            <td>Ledyba</td>
+            <td>II</td>
+            <td><img src="ledy.jpg" width = "100"></td>
+            <td bgcolor="#705898" style="color: white;">Bug</td>
+            <td bgcolor="#00008B" style="color: white;">Flying</td>
+            <td>-</td>
+            <td>Ledian</td>
+            <td>Ledy</td>
+            <td>1999-01-27</td>
+        </tr>
+    </table>
+</body>
+</html>

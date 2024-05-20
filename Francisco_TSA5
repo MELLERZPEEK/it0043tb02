@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Cards</title>
+    <link rel = "stylesheet" href = "Francisco_TSA5.css" />
+</head>
+<body>
+     
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="NIDOKING.png" alt="Nidoking">
+            </div>
+            <div class="detailsviolet">
+                <h1 class="name">Nidoking </h1>
+                <p class="type">TYPES</p>
+                <p class="type1 Poison">Poison</p>
+                <p class="type2 Ground">Ground</p>
+                <p class="desc">When it goes on a rampage, it's impossible to control. But in the presence of a Nidoqueen it has lived with for a long time, Nidoking calms down.</p>
+                <div class="button">
+                    <button class="add">Add Pokemon</button>
+                    <button class="release">Release Pokemon</button>
+                </div>
+            </div>
+        </div>
+        <!-- Duplicate the above card element to create more -->
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="image">
+                <img src="Oddish.png" alt="Oddish">
+            </div>
+            <div class="detailsgreen">
+                <h1 class="name">Oddish</h1>
+                <p class="type">Types:</p>
+                <p class="type1 Poison">Poison</p>
+                <p class="type2 Grass">Grass</p>
+                <p class="desc">Its scientific name is Oddium wanderus. It is said to cover distances as far as 1,000 feet when night falls, walking on its two roots.</p>
+                <div class="button">
+                    <button class="add">Add Pokemon</button>
+                    <button class="release">Release Pokemon</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="image">
+                <img src="geodude.png" alt="Geodude">
+            </div>
+            <div class="detailsrock">
+                <h1 class="name">Geodude</h1>
+                <p class="type">Types:</p>
+                <p class="type1 Rock">Rock</p>
+                <p class="type2 Ground">Ground</p>
+                <p class="desc">At rest, it looks just like a rock. Carelessly stepping on it will make it swing its fists angrily.</p>
+                <div class="button">
+                    <button class="add">Add Pokemon</button>
+                    <button class="release">Release Pokemon</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="image">
+                <img src="Slowpoke.png" alt="Slowpoke">
+            </div>
+            <div class="detailswater">
+                <h1 class="name">Slowpoke</h1>
+                <p class="type">Types:</p>
+                <p class="type1 Water">Water</p>
+                <p class="type2 Psychic">Psychic</p>
+                <p class="desc">It is incredibly slow and dopey. It takes five seconds for it to feel pain when under attack.</p>
+                <div class="button">
+                    <button class="add">Add Pokemon</button>
+                    <button class="release">Release Pokemon</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card">
+            <div class="image">
+                <img src="Dragonite.png" alt="Dragonite">
+            </div>
+            <div class="detailsdragon">
+                <h1 class="name">Dragonite</h1>
+                <p class="type">Types:</p>
+                <p class="type1 Dragon">Dragon</p>
+                <p class="type2 Flying">Flying</p>
+                <p class="desc">It is said that somewhere in the ocean lies an island where these gather. Only they live there.</p>
+                <div class="button">
+                    <button class="add">Add Pokemon</button>
+                    <button class="release">Release Pokemon</button>
+                </div>
+            </div>
+        </div>
+       <!-- Card 6 -->
+       <div class="card">
+        <div class="image">
+            <img src="Cyndaquil.png" alt="Cyndaquil">
+        </div>
+        <div class="detailsfire">
+            <h1 class="name">Cyndaquil</h1>
+            <p class="type">Types:</p>
+            <p class="type1 Fire">Fire</p>
+            <p class="desc">It usually stays hunched over. If it is angry or surprised, it shoots flames out of its back.</p>
+            <div class="button">
+                <button class="add">Add Pokemon</button>
+                <button class="release">Release Pokemon</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,3 +1,9 @@
+body {
+    background-image: url("BGPOKEMON.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -26,35 +32,24 @@
     background-size: cover;
     background-position: center;
 }
+
 .image img {
     width: 100%;
     height: 100%;
 }
 
-.detailsviolet {
+.details {
     padding: 20px;
-    background-color: #A33EA1
+    text-align: center;
+    background-color: inherit;
 }
-.detailsgreen {
-    padding: 20px;
-    background-color: #7AC74C
-}
-.detailsrock {
-    padding: 20px;
-    background-color: #B6A136
-}
-.detailswater {
-    padding: 20px;
-    background-color: #6390F0
-}
-.detailsdragon {
-    padding: 20px;
-    background-color: #6F35FC
-}
-.detailsfire {
-    padding: 20px;
-    background-color: #EE8130
-}
+
+.detailsviolet { background-color: #A33EA1; }
+.detailsgreen { background-color: #7AC74C; }
+.detailsrock { background-color: #B6A136; }
+.detailswater { background-color: #6390F0; }
+.detailsdragon { background-color: #6F35FC; }
+.detailsfire { background-color: #EE8130; }
 
 .name {
     margin: auto;
@@ -89,102 +84,31 @@
     cursor: pointer;
 }
 
-.button button.add {
+.button .add {
     background-color: #4caf50;
     color: #fff;
 }
 
-.button button.release {
+.button .release {
     background-color: #f44336;
-    color: white
+    color: white;
 }
-.Poison {
-    padding: 8px 20px;
-    background-color: magenta;
-    color: white;
-    margin:  auto;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 5px;
-}    
-.Ground {
-    padding: 8px 20px;
-    background-color: #E2BF65;
-    color: white;
-    margin:  auto;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 5px;
-}    
-.Grass {
-    padding: 8px 20px;
-    background-color: green;
-    color: white;
-    margin:  auto;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 5px;
-}    
-.Rock {
-    padding: 8px 20px;
-    background-color: #e6c315;
-    color: white;
-    margin:  auto;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 5px;
-}    
-.Water {
-    padding: 8px 20px;
-    background-color: #2455be;
-    color: white;
-    margin:  auto;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 5px;
-}    
-.Psychic {
-    padding: 8px 20px;
-    background-color: #F95587;
-    color: white;
-    margin:  auto;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 5px;
-}   
-.Dragon {
-    padding: 8px 20px;
-    background-color: #48357a;
-    color: white;
-    margin:  auto;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 5px;
-}   
-.Flying {
-    padding: 8px 20px;
-    background-color: #A98FF3;
-    color: white;
-    margin:  auto;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 5px;
-}  
-.Fire {
-    padding: 8px 20px;
-    background-color: #fc6d00;
-    color: white;
-    margin:  auto;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 5px;
-}  
-body {
-    background-image: url("BGPOKEMON.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
 
+.Poison, .Ground, .Grass, .Rock, .Water, .Psychic, .Dragon, .Flying, .Fire {
+    padding: 8px 20px;
+    color: white;
+    margin: auto;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+}
 
- 
- 
+.Poison { background-color: magenta; }
+.Ground { background-color: #E2BF65; }
+.Grass { background-color: green; }
+.Rock { background-color: #e6c315; }
+.Water { background-color: #2455be; }
+.Psychic { background-color: #F95587; }
+.Dragon { background-color: #48357a; }
+.Flying { background-color: #A98FF3; }
+.Fire { background-color: #fc6d00; }

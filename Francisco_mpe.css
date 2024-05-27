@@ -1,61 +1,230 @@
-
+/* General styles */
 body, html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-image: url('pokemon_img/POKEBALLBACKG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
-    background-image: url("POKEMONBALLBG.jpg");
+    overflow: auto; /* Ensure the body is scrollable */
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Add gap between items */
     justify-content: center;
-    background-image: url('BGPOKEMON1.png'); 
-    background-size: cover;
-    padding: 20px;
+    align-items: center;
+    min-height: 100vh; /* Ensure full height usage */
+    padding: 20px; /* Add padding to the container */
 }
 
 .pokemon {
-    flex: 1 0 calc(25% - 20px);
-    margin: 10px;
-    position: relative;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
     transition: all 0.3s ease;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.pokemon:hover {
-    transform: scale(1.1);
+    position: relative;
+    background-color: transparent;
 }
 
 .pokemon img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
-.name {
-    display: block;
+.pokemon .name {
+    display: none;
+    margin-top: 10px;
+    font-size: 1.2em;
     font-weight: bold;
-    color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .pokemon {
-        flex: 1 0 calc(50% - 20px);
-    }
+.pokemon .pokeball {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .pokemon:hover {
-    background-image: url('BGPOKEMON1.png'); 
+    background-image: url('pokemon_img/BGPOKEMON1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pokemon:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive grid to list */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pokemon {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pokemon {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .pokemon .name {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    .pokemon .pokeball {
+        display: inline;
+    }
+}
+
+/* List to card */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .pokemon {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pokemon .name {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .pokemon .pokeball {
+        display: none;
+    }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .pokemon {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .pokemon .name {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .pokemon .pokeball {
+        display: none;
+    }
+}
+
+/* Specific Pokémon background colors and name colors */
+.pokemon:nth-child(1) { 
+    background-color: #A8B820; /* Caterpie */
+}
+.pokemon:nth-child(1) .name {
+    color: #3E721D; /* Dark green for contrast */
+}
+
+.pokemon:nth-child(2) { 
+    background-color: #6890F0; /* Squirtle */
+}
+.pokemon:nth-child(2) .name {
+    color: #1E3A8A; /* Dark blue for contrast */
+}
+
+.pokemon:nth-child(3) { 
+    background-color: #F8D030; /* Pikachu */
+}
+.pokemon:nth-child(3) .name {
+    color: #A67214; /* Dark gold for contrast */
+}
+
+.pokemon:nth-child(4) { 
+    background-color: #F85888; /* Psyduck */
+}
+.pokemon:nth-child(4) .name {
+    color: #941C3A; /* Dark pink for contrast */
+}
+
+.pokemon:nth-child(5) { 
+    background-color: #F8A030; /* Jigglypuff */
+}
+.pokemon:nth-child(5) .name {
+    color: #943D00; /* Dark orange for contrast */
+}
+
+.pokemon:nth-child(6) { 
+    background-color: #A8A878; /* Mew */
+}
+.pokemon:nth-child(6) .name {
+    color: #515135; /* Dark olive for contrast */
+}
+
+.pokemon:nth-child(7) { 
+    background-color: #A040A0; /* Weedle */
+}
+.pokemon:nth-child(7) .name {
+    color: #5A005A; /* Dark purple for contrast */
+}
+
+.pokemon:nth-child(8) { 
+    background-color: #A8A878; /* Rattata */
+}
+.pokemon:nth-child(8) .name {
+    color: #515135; /* Dark olive for contrast */
+}
+
+.pokemon:nth-child(9) { 
+    background-color: #F85858; /* Charmander */
+}
+.pokemon:nth-child(9) .name {
+    color: #941C1C; /* Dark red for contrast */
+}
+
+.pokemon:nth-child(10) { 
+    background-color: #78C850; /* Bulbasaur */
+}
+.pokemon:nth-child(10) .name {
+    color: #3A7D2E; /* Dark green for contrast */
+}
+
+.pokemon:nth-child(11) { 
+    background-color: #705898; /* Zubat */
+}
+.pokemon:nth-child(11) .name {
+    color: #352C4E; /* Dark purple for contrast */
+}
+
+.pokemon:nth-child(12) { 
+    background-color: #A8B820; /* Snorlax */
+}
+.pokemon:nth-child(12) .name {
+    color: #3E721D; /* Dark green for contrast */
 }

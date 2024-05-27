@@ -1,0 +1,61 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("POKEMONBALLBG.jpg");
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('BGPOKEMON1.png'); 
+    background-size: cover;
+    padding: 20px;
+}
+
+.pokemon {
+    flex: 1 0 calc(25% - 20px);
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pokemon:hover {
+    transform: scale(1.1);
+}
+
+.pokemon img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.name {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pokemon {
+        flex: 1 0 calc(50% - 20px);
+    }
+}
+
+.pokemon:hover {
+    background-image: url('BGPOKEMON1.png'); 
+}

@@ -1,4 +1,4 @@
-/* General styles */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -8,17 +8,17 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    overflow: auto; /* Ensure the body is scrollable */
+    overflow: auto; 
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px; /* Add gap between items */
+    gap: 20px; 
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ensure full height usage */
-    padding: 20px; /* Add padding to the container */
+    min-height: 100vh; 
+    padding: 20px; 
 }
 
 .pokemon {
@@ -122,7 +122,7 @@ body, html {
     }
 }
 
-/* Adjustments for very small screens */
+
 @media (max-width: 480px) {
     .container {
         grid-template-columns: 1fr;
@@ -144,87 +144,87 @@ body, html {
     }
 }
 
-/* Specific Pokémon background colors and name colors */
+
 .pokemon:nth-child(1) { 
     background-color: #A8B820; /* Caterpie */
 }
 .pokemon:nth-child(1) .name {
-    color: #3E721D; /* Dark green for contrast */
+    color: #3E721D; 
 }
 
 .pokemon:nth-child(2) { 
     background-color: #6890F0; /* Squirtle */
 }
 .pokemon:nth-child(2) .name {
-    color: #1E3A8A; /* Dark blue for contrast */
+    color: #1E3A8A; 
 }
 
 .pokemon:nth-child(3) { 
     background-color: #F8D030; /* Pikachu */
 }
 .pokemon:nth-child(3) .name {
-    color: #A67214; /* Dark gold for contrast */
+    color: #A67214;
 }
 
 .pokemon:nth-child(4) { 
     background-color: #F85888; /* Psyduck */
 }
 .pokemon:nth-child(4) .name {
-    color: #941C3A; /* Dark pink for contrast */
+    color: #941C3A; 
 }
 
 .pokemon:nth-child(5) { 
     background-color: #F8A030; /* Jigglypuff */
 }
 .pokemon:nth-child(5) .name {
-    color: #943D00; /* Dark orange for contrast */
+    color: #943D00; 
 }
 
 .pokemon:nth-child(6) { 
     background-color: #A8A878; /* Mew */
 }
 .pokemon:nth-child(6) .name {
-    color: #515135; /* Dark olive for contrast */
+    color: #515135;
 }
 
 .pokemon:nth-child(7) { 
     background-color: #A040A0; /* Weedle */
 }
 .pokemon:nth-child(7) .name {
-    color: #5A005A; /* Dark purple for contrast */
+    color: #5A005A; 
 }
 
 .pokemon:nth-child(8) { 
     background-color: #A8A878; /* Rattata */
 }
 .pokemon:nth-child(8) .name {
-    color: #515135; /* Dark olive for contrast */
+    color: #515135;
 }
 
 .pokemon:nth-child(9) { 
     background-color: #F85858; /* Charmander */
 }
 .pokemon:nth-child(9) .name {
-    color: #941C1C; /* Dark red for contrast */
+    color: #941C1C; 
 }
 
 .pokemon:nth-child(10) { 
     background-color: #78C850; /* Bulbasaur */
 }
 .pokemon:nth-child(10) .name {
-    color: #3A7D2E; /* Dark green for contrast */
+    color: #3A7D2E; 
 }
 
 .pokemon:nth-child(11) { 
     background-color: #705898; /* Zubat */
 }
 .pokemon:nth-child(11) .name {
-    color: #352C4E; /* Dark purple for contrast */
+    color: #352C4E; 
 }
 
 .pokemon:nth-child(12) { 
     background-color: #A8B820; /* Snorlax */
 }
 .pokemon:nth-child(12) .name {
-    color: #3E721D; /* Dark green for contrast */
+    color: #3E721D; 
 }

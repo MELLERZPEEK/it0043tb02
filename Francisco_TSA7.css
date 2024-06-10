@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.body
 
 .container {
     width: 90vw;
@@ -209,9 +210,43 @@ main .container {
     object-position: center;
     box-shadow: 5px 5px 3px black;
     border: 3px solid darkred;
+    color: whitesmoke;
+    background-color: black;
 }
 
 .Hero-img{
     width: 100%;
     object-fit: cover;
+    background-color: black;
+    
+}
+
+body {
+    background-image: url("redsmoke.jpg");
+    
+   }
+
+   @media (max-width: 768px) {
+    /* Adjustments for tablets and smaller screens */
+    main .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .main-image,
+    .sub-image,
+    .coming,
+    .news {
+        grid-column: auto;
+        grid-row: auto;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 420px) {
+    /* Adjustments for mobile phones */
+    .button-84 {
+        height: 48px;
+    }
 }
